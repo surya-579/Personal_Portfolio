@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e695a95521.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ----------header---------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo_image.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Competitive Programmer</p> -->
+                <h1>Hi, I'm <span>S</span>urya <span>K</span>oushik</h1>
+                <p>Competitive Programmer</p>
+                <p>ML Enthusiast</p>
+                <!-- <h1>Hi, I'm <span>Surya Koushik</span></h1> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/AboutMe_Img.jpg" alt="Myself_img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Pre-final Year Undergraduate Student at GITAM Deemed to be University || Competitive Programmer || 2⭐ @Codechef || Secretary at Meta Developer Communities (MDC)</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Competetive Programming</span><br>Problem Solving & Decision Making</li>
+                            <li><span>Machine Learning</span><br>Data Science, ML, DL</li>
+                            <li><span>Product Development</span><br>Front End Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>EXP 1</span><br>Problem Solving & Decision Making</li>
+                            <li><span>EXP 2</span><br>Data Science, ML, DL</li>
+                            <li><span>EXP 3</span><br>Front End Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Edu 1</span><br>Problem Solving & Decision Making</li>
+                            <li><span>Edu 2</span><br>Data Science, ML, DL</li>
+                            <li><span>Edu 3</span><br>Front End Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Web design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                    tincident sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Machine Learning</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                    tincident sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-nodes"></i>
+                <h2>Competitive Programming</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                    tincident sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------Portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work-1">
+                <div class="layer">
+                    <h3>Iris Classification</h3>
+                    <p>The Iris Classification project employed the IRIS dataset, categorizing iris species using Support Vector Machine
+                        (SVM) and Logistic Regression, rigorously testing their effectiveness.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work-2.png" alt="work-2">
+                <div class="layer">
+                    <h3>MNIST, CIFAR-10 Classification using CNNs</h3>
+                    <p>The project leveraged CIFAR-10 and MNIST datasets, employing TensorFlow and Keras to implement a fine-tuned
+                        Convolutional Neural Network (CNN) for optimal image classification results.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png" alt="work-3">
+                <div class="layer">
+                    <h3>EDA on Titanic Dataset</h3>
+                    <p>Conducted comprehensive Exploratory Data Analysis (EDA) on the Titanic dataset, analyzing passenger
+                        information and survival rates, utilizing statistical methods to understand patterns and trends.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- --Hidden-- -->
+            <div class="work">
+                <img src="images/work-1.png" alt="work-1">
+                <div class="layer">
+                    <h3>Iris Classification</h3>
+                    <p>The Iris Classification project employed the IRIS dataset, categorizing iris species using Support Vector Machine
+                        (SVM) and Logistic Regression, rigorously testing their effectiveness.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-row">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contact-box">
+                <h2>sande@gitam.in</h2>
+                <h2>LinkedIn</h2>
+                <div class="contact-icons">
+                    <a href=""><i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="https://www.linkedin.com/in/sri-surya-koushik-ande-37874a247/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
