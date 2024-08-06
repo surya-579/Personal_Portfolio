@@ -11,7 +11,7 @@
     <!-- ----------header---------- -->
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="navbar">
                 <img src="Images/Logo_image.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -23,7 +23,8 @@
             </nav>
             <div class="header-text">
                 <!-- <p>Competitive Programmer</p> -->
-                <h1>Hi, I'm <span>S</span>urya <span>K</span>oushik</h1>
+                <h1 class="typing-text">Hi, I'm <span>S</span>urya <span>K</span>oushik</h1>
+                <!-- <span class="cursor">|</span> -->
                 <p>Competitive Programmer</p>
                 <p>ML Enthusiast</p>
                 <!-- <h1>Hi, I'm <span>Surya Koushik</span></h1> -->
@@ -40,7 +41,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Pre-final Year Undergraduate Student at GITAM Deemed to be University || Competitive Programmer || 2⭐ @Codechef || Secretary at Meta Developer Communities (MDC)</p>
+                    <p>Final Year Undergraduate Student at GITAM Deemed to be University || Competitive Programmer || 3⭐ @Codechef || Secretary at Meta Developer Communities (MDC)</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -56,16 +57,16 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>EXP 1</span><br>Problem Solving & Decision Making</li>
-                            <li><span>EXP 2</span><br>Data Science, ML, DL</li>
-                            <li><span>EXP 3</span><br>Front End Development</li>
+                            <li><span>AICTE Eduskills Internship</span><br>AIML Intern</li>
+                            <li><span>Meta Developers Communities</span><br>Secretary</li>
+                            <li><span>Fortinet Internship</span><br>Network Security Associate Intern</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Edu 1</span><br>Problem Solving & Decision Making</li>
-                            <li><span>Edu 2</span><br>Data Science, ML, DL</li>
-                            <li><span>Edu 3</span><br>Front End Development</li>
+                            <li><span>Bachelor of Technology</span><br>Btech in CSE AIML at GITAM University, Visakhapatnam</li>
+                            <li><span>Higher Secondary</span><br>Sri Prakash Vidyaniketan</li>
+                            <li><span>High School</span><br>Sri Chaitanya EM School</li>
                         </ul>
                     </div>
                 </div>
@@ -109,11 +110,10 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png" alt="work-1">
+                <img src="images/Work-1.png" alt="work-1">
                 <div class="layer">
-                    <h3>Iris Classification</h3>
-                    <p>The Iris Classification project employed the IRIS dataset, categorizing iris species using Support Vector Machine
-                        (SVM) and Logistic Regression, rigorously testing their effectiveness.</p>
+                    <h3>Parkinson's Disease Detection</h3>
+                    <p>know more</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-1.png" alt="work-3">
+                <img src="images/Work-1.png" alt="work-3">
                 <div class="layer">
                     <h3>EDA on Titanic Dataset</h3>
                     <p>Conducted comprehensive Exploratory Data Analysis (EDA) on the Titanic dataset, analyzing passenger
@@ -137,7 +137,7 @@
             </div>
 
             <!-- --Hidden-- -->
-            <div class="work">
+            <div class="work hidden-project">
                 <img src="images/work-1.png" alt="work-1">
                 <div class="layer">
                     <h3>Iris Classification</h3>
@@ -146,27 +146,72 @@
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+            <div class="work hidden-project">
+                <img src="images/work-2.png" alt="work-2">
+                <div class="layer">
+                    <h3>Project 5</h3>
+                    <p>Description for Project 5.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-1.png" alt="work-3">
+                <div class="layer">
+                    <h3>Project 6</h3>
+                    <p>Description for Project 6.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-1.png" alt="work-4">
+                <div class="layer">
+                    <h3>Project 7</h3>
+                    <p>Description for Project 6.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-1.png" alt="work-5">
+                <div class="layer">
+                    <h3>Project 8</h3>
+                    <p>Description for Project 6.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn" id="seeMoreBtn">See more</a>
     </div>
 </div>
 
 <!-- ----------contact---------- -->
 <div id="contact">
     <div class="container">
-        <div class="contact-row">
-            <h1 class="sub-title">Contact Me</h1>
-            <div class="contact-box">
-                <h2>sande@gitam.in</h2>
-                <h2>LinkedIn</h2>
-                <div class="contact-icons">
-                    <a href=""><i class="fa-solid fa-paper-plane"></i></a>
-                    <a href="https://www.linkedin.com/in/sri-surya-koushik-ande-37874a247/"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane icon-red"></i> contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt icon-red"></i> 0123456789</p>
+                
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <a href="images/Final_CV_1page__Final_updated_latest.pdf" download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -183,6 +228,54 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
+
+    // portfolio
+    document.addEventListener("DOMContentLoaded", function() {
+    const seeMoreBtn = document.getElementById("seeMoreBtn");
+    const hiddenProjects = document.querySelectorAll(".hidden-project");
+    let visibleCount = 0;
+
+    seeMoreBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        for (let i = visibleCount; i < visibleCount + 5 && i < hiddenProjects.length; i++) {
+            hiddenProjects[i].style.display = "block";
+        }
+        visibleCount += 5;
+        
+        if (visibleCount >= hiddenProjects.length) {
+            seeMoreBtn.style.display = "none";
+        }
+    });
+
+    // Optional: Reset hidden projects on page refresh
+    window.addEventListener("beforeunload", function() {
+        for (let i = 3; i < hiddenProjects.length; i++) {
+            hiddenProjects[i].style.display = "none";
+        }
+    });
+});
+
+    
+    //Navbar
+    /*document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollPosition = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function() {
+        let currentScrollPosition = window.pageYOffset;
+
+        if (currentScrollPosition > lastScrollPosition) {
+            // Scrolling down
+            navbar.style.top = "-80px"; // Adjust based on your navbar height
+        } else {
+            // Scrolling up
+            navbar.style.top = "0";
+        }
+
+        lastScrollPosition = currentScrollPosition;
+    });
+});*/
 </script>
 
 </body>

@@ -13,9 +13,11 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/desktop_backgroundImage.png);
+    /*background-image: url(images/desktop_backgroundImage.png);*/
+    background-image: url(images/Portfolio_bg_edited.png);
     background-size: cover;
     background-position: center;
+    /*opacity: 0.5;*/
 }
 .container{
     padding: 10px 10%;
@@ -27,6 +29,10 @@ nav{
     flex-wrap: wrap;
     flex-direction: row;
 }
+/*#navbar {
+    transition: top 0.3s;
+    z-index: 1000; 
+}*/
 .logo{
     width: 140px;
     height: 69px;
@@ -67,6 +73,45 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#ff004f;
 }
+
+.header-text h1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    /*border-right: 0.15em solid red;*/
+}
+
+
+/*.typing-text {
+    display: inline-block;
+    animation: typing 6s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: red;
+    }
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+.header-text h1 span:first-child {
+    color: inherit;
+}*/
 
 /* ----------about---------- */
 #about{
@@ -122,10 +167,11 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 14px;
 }
 .tab-contents ul li span{
     color: #ff004f; /* #b54769 */
-    font-size: 14px;
+    font-size: 20px;
 }
 .tab-contents{
     display: none;
@@ -133,6 +179,21 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maximum of 3 columns */
+    gap: 20px; /* Space between items */
+}
+
+.skill-item {
+    background-color: #222; /* Background color for skill items */
+    color: #ff004f; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* ---------services--------- */
@@ -249,34 +310,66 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+.hidden-project {
+    display: none;
+}
+
 
 /* ----------contact---------- */
-.contact-row{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact-left{ 
+    flex-basis: 35%;
 }
-.contact-box{
-    display: flex;
-    margin: 50px auto;
-    text-align: center;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact-right{ 
+    flex-basis: 60%;
 }
-.contact-box a{
-    margin-top: 20px;
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
     color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
     text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.icon-red {
+    color: red;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn .btn2{
+    display : inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
     font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #ff004f;
 }
